@@ -1,10 +1,12 @@
 package _03_jars._1_intro_to_jars;
 
+import org.jointheleague.graphical.robot.Robot;
 
 public class RobotInAJar {
 	
 	/* 1.   Create a String variable and initialize it to your name  */
-	
+	String name="jesse";
+	Robot rob=new Robot();
 	
 	/* If you did not make any syntax errors, there should be no red lines under your code. 
 	 * This is because the type String is part of the basic Java language that all programs  
@@ -58,7 +60,12 @@ public class RobotInAJar {
 	
 	public void draw() {
 		/*** Write code to make your robot draw a shape here ****/
-		
+		rob.penDown();
+		rob.setSpeed(100);
+		for (int i = 0; i < 5; i++) {
+			rob.move(100);
+			rob.turn(90);
+		}
 		
 	}
 }
